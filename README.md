@@ -80,7 +80,7 @@ Download the latest version of <a href="https://modelscope.cn/datasets/JiuTian-A
 Write your JSON config file for evaluation.
 
 Example JSON structure:
-```json
+```
 {
     "version": "default", // Inference version, affects result path
     "round": 1, // Inference round
