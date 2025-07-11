@@ -83,34 +83,34 @@ Example JSON structure:
 ```python
 config_json = {
     "version": "default", # Inference version, affects result path
-    "round": 1, // Inference round
+    "round": 1, # Inference round
     "model_config": {
-        "reason_model_name": "{your model name}", // Reasoning model name, e.g., QwQ-32B
-        "reason_model_path": "{your model path}", // Path to reasoning model
-        "reason_model_cards": "0,1,2,3,4,5,6,7", // GPUs for reasoning model
-        "reason_max_model_len": 8192, // Context length for reasoning model
-        "reason_temperature": 0.2, // Temperature for reasoning model
-        "judge_model_name": "{your judge model name}", // Judge model name
-        "judge_model_path": "{your judge model path}", // Path to judge model
-        "judge_model_cards": "0,1,2,3,4,5,6,7", // GPUs for judge model
-        "judge_max_model_len": 10240 // Context length for judge model
+        "reason_model_name": "{your model name}", # Reasoning model name, e.g., QwQ-32B
+        "reason_model_path": "{your model path}", # Path to reasoning model
+        "reason_model_cards": "0,1,2,3,4,5,6,7", # GPUs for reasoning model
+        "reason_max_model_len": 8192, # Context length for reasoning model
+        "reason_temperature": 0.2, # Temperature for reasoning model
+        "judge_model_name": "{your judge model name}", # Judge model name
+        "judge_model_path": "{your judge model path}", # Path to judge model
+        "judge_model_cards": "0,1,2,3,4,5,6,7", # GPUs for judge model
+        "judge_max_model_len": 10240 # Context length for judge model
     },
     "dataset_config": {
-        "Table_Retrieval": { // Dataset name
-            "path": "{your data path}/Table_Retrieval.json", // Dataset path
-            "reason_mode": [ // Inference modes (multiple options)
-                "TCoT_md", // TCoT mode, Tables in markdown format
-                "TCoT_html", // TCoT mode, Tables in HTML format
-                "PoT", // PoT mode
-                "ICoT" // ICoT mode
+        "Table_Retrieval": { # Dataset name
+            "path": "{your data path}/Table_Retrieval.json", # Dataset path
+            "reason_mode": [ # Inference modes (multiple options)
+                "TCoT_md", # TCoT mode, Tables in markdown format
+                "TCoT_html", # TCoT mode, Tables in HTML format
+                "PoT", # PoT mode
+                "ICoT" # ICoT mode
             ],
-            "if_instruction": false, // Include instructions in prompt
-            "if_title": true, // Include table title in prompt
-            "metrics": [ // Evaluation metrics (multiple options)
-                "BLEU", // BLEU score
-                "ROUGE", // ROUGE-L score
-                "EM", // Exact Match
-                "LLM_score" // LLM-as-a-judge score
+            "if_instruction": false, # Include instructions in prompt
+            "if_title": true, # Include table title in prompt
+            "metrics": [ # Evaluation metrics (multiple options)
+                "BLEU", # BLEU score
+                "ROUGE", # ROUGE-L score
+                "EM", # Exact Match
+                "LLM_score" # LLM-as-a-judge score
             ]
         },
         ...
@@ -146,9 +146,9 @@ Read the jsonl file by rows, each row being a json that stores all the informati
 
 Example JSON structure:
 
-```json
+```python
 {
-  // The following fields correspond to the fields in the dataset.
+  # The following fields correspond to the fields in the dataset.
   "id": "dataset_name|example_id",
   "file_path": ["path/example.csv"],
   "instruction": "example_instruction",
@@ -160,24 +160,24 @@ Example JSON structure:
   "Table_html":["example_html"],
   "number_answer": "str or float",
 
-  // The following are fields related to model inference.
-  "mode":"PoT", // infer mode
+  # The following are fields related to model inference.
+  "mode":"PoT", # infer mode
   "df":"dataframe str",
-  "input_prompt":"example prompt", // question prompt
-  "history":"example history", // full history
-  "generation":"example generation", // model response
-  "text_result":"text answer", // parsed TCoT or ICoT answer
-  "code":"the last code", // parsed last code
-  "code_run_result":"code run result", // parsed PoT answer
+  "input_prompt":"example prompt", # question prompt
+  "history":"example history", # full history
+  "generation":"example generation", # model response
+  "text_result":"text answer", # parsed TCoT or ICoT answer
+  "code":"the last code", # parsed last code
+  "code_run_result":"code run result", # parsed PoT answer
 
-  // The following are fields related to evaluation scores.
+  # The following are fields related to evaluation scores.
   "judge_scores":
     {
-      "BLEU": 0.0, // BLEU score
-      "ROUGE": 0.0, // ROUGE-L score (range is [0, 1])
-      "EM": 0.0, // exact match score
-      "LLM_score": 0, // LLM-as-a-judge score (range is [0, 10])
-      "LLM_score_reason": "\\boxed{0}" // LLM-as-a-judge reponse
+      "BLEU": 0.0, # BLEU score
+      "ROUGE": 0.0, # ROUGE-L score (range is [0, 1])
+      "EM": 0.0, # exact match score
+      "LLM_score": 0, # LLM-as-a-judge score (range is [0, 10])
+      "LLM_score_reason": "\\boxed{0}" # LLM-as-a-judge reponse
     },
 }
 ```
