@@ -82,7 +82,7 @@ Write your JSON config file for evaluation.
 Example JSON structure:
 ```json
 {
-    "version": "default", (comment: Inference version, affects result path)
+    "version": "default", // Inference version, affects result path
     "round": 1, // Inference round
     "model_config": {
         "reason_model_name": "{your model name}", // Reasoning model name, e.g., QwQ-32B
