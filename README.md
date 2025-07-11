@@ -10,7 +10,7 @@
 Official repository for paper "TReB: A Comprehensive Benchmark for Evaluating Table Reasoning Capabilities of Large Language Models"
 
 <p align="left">
-    <a href="https://gitee.com/CMCC-jiutian/jiutian-treb">🏠 Gitee Page </a> •
+    <a href="https://github.com/JT-LM/jiutian-treb">🏠 Github Page </a> •
     <a href="https://modelscope.cn/datasets/JiuTian-AI/JIUTIAN-TReB">🤗 Benchmark Data </a> •
     <a href="http://arxiv.org/abs/2506.18421">🧾 Paper </a>
 </p>
@@ -82,7 +82,7 @@ Write your JSON config file for evaluation.
 Example JSON structure:
 ```json
 config_json = {
-    "version": "default", // Inference version, affects result path
+    "version": "default", # Inference version, affects result path
     "round": 1, // Inference round
     "model_config": {
         "reason_model_name": "{your model name}", // Reasoning model name, e.g., QwQ-32B
