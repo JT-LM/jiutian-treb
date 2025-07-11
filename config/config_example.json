@@ -1,0 +1,328 @@
+{
+    "version": "default",
+    "round": 1,
+    "model_config": {
+        "reason_model_name": "{your model name}",
+        "reason_model_path": "{your model path}",
+        "reason_model_cards": "0,1,2,3,4,5,6,7",
+        "reason_max_model_len": 8192,
+        "reason_temperature": 0.2,
+        "judge_model_name": "{your judge model name}",
+        "judge_model_path": "{your judge model path}",
+        "judge_model_cards": "0,1,2,3,4,5,6,7",
+        "judge_max_model_len": 10240
+    },
+    "dataset_config": {
+        "Code_Generation": {
+            "path": "{your-data-path}/Code_Generation.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Instruction_Following": {
+            "path": "{your-data-path}/Instruction_Following.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "Instruction_Following"
+            ]
+        },
+        "Robustness_Evaluation": {
+            "path": "{your-data-path}/Robustness_Evaluation.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Understanding": {
+            "path": "{your-data-path}/Understanding.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Hallucination_Evaluation": {
+            "path": "{your-data-path}/Hallucination_Evaluation.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Mathematical_Reasoning": {
+            "path": "{your-data-path}/Mathematical_Reasoning.json",
+            "reason_mode": [
+                "TCoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Selection": {
+            "path": "{your-data-path}/Table_Selection.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_General_Operations": {
+            "path": "{your-data-path}/Table_General_Operations.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Title_Naming": {
+            "path": "{your-data-path}/Table_Title_Naming.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Plausibility_Verification": {
+            "path": "{your-data-path}/Table_Plausibility_Verification.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html"
+            ],
+            "if_instruction": false,
+            "if_title": true,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Fact_Checking": {
+            "path": "{your-data-path}/Table_Fact_Checking.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": true,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Summary": {
+            "path": "{your-data-path}/Table_Summary.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html"
+            ],
+            "if_instruction": false,
+            "if_title": true,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Domain-specific_Operations": {
+            "path": "{your-data-path}/Table_Domain-specific_Operations.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": true,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Distribution_Testing": {
+            "path": "{your-data-path}/Table_Distribution_Testing.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Column_Naming": {
+            "path": "{your-data-path}/Table_Column_Naming.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Query": {
+            "path": "{your-data-path}/Table_Query.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Hypothesis_Testing": {
+            "path": "{your-data-path}/Table_Hypothesis_Testing.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Correlation_Analysis": {
+            "path": "{your-data-path}/Table_Correlation_Analysis.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Outlier_Detection": {
+            "path": "{your-data-path}/Table_Outlier_Detection.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": false,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        },
+        "Table_Retrieval": {
+            "path": "{your-data-path}/Table_Retrieval.json",
+            "reason_mode": [
+                "TCoT_md",
+                "TCoT_html",
+                "PoT",
+                "ICoT"
+            ],
+            "if_instruction": false,
+            "if_title": true,
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "EM",
+                "LLM_score"
+            ]
+        }
+    }
+}
