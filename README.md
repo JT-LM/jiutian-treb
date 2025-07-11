@@ -33,7 +33,7 @@ Official repository for paper "TReB: A Comprehensive Benchmark for Evaluating Ta
   </ul>
 
 <p align="center">
-<img src="assets/framework.png" width="100%" alt="TableBench" />
+<img src="assets/framework.png" width="100%" alt="TReB" />
 </p>
 
 ## 📚 Benchmark Introduction
