@@ -13,6 +13,7 @@ Official repository for paper "TReB: A Comprehensive Benchmark for Evaluating Ta
     <a href="https://github.com/JT-LM/jiutian-treb">🏠 Github Page </a> •
     <a href="https://modelscope.cn/datasets/JiuTian-AI/JIUTIAN-TReB">🤗 Benchmark Data </a> •
     <a href="http://arxiv.org/abs/2506.18421">🧾 Paper </a>
+    <a href="https://jt-lm.github.io/jiutian-treb">🏆 Leaderboard </a>
 </p>
 
 ## 🧾 Overview
@@ -207,3 +208,4 @@ If you find our work helpful, please use the following citations.
       url={https://arxiv.org/abs/2506.18421}, 
 }
 ```
+
