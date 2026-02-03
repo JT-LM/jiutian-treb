@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)https://tablebench.github.io/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="TableBench">
+  <meta name="description" content="TReB">
   <meta name="author" content="">
-  <link rel="icon" href="./index_files/tablebench-logo.png" type="image/x-icon">
   <title>TReB</title>
 
   <!-- Bootstrap core CSS -->
@@ -46,11 +44,11 @@
   <div class="container-fluid">
     <div class="container" id="main">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <div class="card card-outline-secondary">
             <div class="card-header">
               <div style="text-align: left;">Leaderboard (LLM-as-a-judge)</div>
-              <div style="text-align: left; font-size: 0.55em; font-style: italic;">scores are averaged over TCoT, PoT and ICoT</div>
+              <div style="text-align: left; font-size: 0.7em; font-style: italic;">The results are generated through the native TReB evaluation process, taking the highest score among the three modes: TCoT, PoT, and ICoT. (We also encourage submitters to use custom workflows or inference modes.)</div>
             </div>
             <div class="table-wrapper">
               <table class="table" id="ex-table">
@@ -64,22 +62,22 @@
                     Code
                   </th> -->
                     <th scope="col" rowspan="1" class="align-middle text-center">
-                      TU<br>
+                      Table Understanding<br>(TU)
                     </th>
                     <th scope="col" colspan="1" class="text-center">
-                      TBO<br>
+                      Table Basic Operation<br>(TBO)
                     </th>
                     <th scope="col" colspan="1" class="text-center">
-                      TCO<br>
+                      Table Computational Operation<br>(TCO)
                     </th>
                     <th scope="col" colspan="1" class="text-center">
-                      DA<br>
+                      Data Analysis<br>(DA)
                     </th>
                     <th scope="col" colspan="1" class="align-middle text-center">
-                      ADA
+                      Advanced Data Analysis<br>(ADA)
                     </th>
                     <th scope="col" colspan="1" class="align-middle text-center">
-                      Avg.
+                      Overall Score
                     </th>
                   </tr>
                 </thead>
@@ -89,15 +87,45 @@
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Oct 28, 2025</span>
                     </td>
-                    <td class="align-middle text-center">JT-DA-32B<br>
-                      <span class="affiliation">close source</span>
+                    <td class="align-middle text-center">JT-DA<br>
+                      <span class="affiliation">JIUTIAN Research</span>
                     </td>
-                    <td class="align-middle text-center">87.01</td>
-                    <td class="align-middle text-center">86.39</td>
-                    <td class="align-middle text-center">78.11</td>
-                    <td class="align-middle text-center">71.10</td>
-                    <td class="align-middle text-center">49.81</td>
-                    <td class="align-middle text-center"><b>74.48</b></td>
+                    <td class="align-middle text-center">80.704</td>
+                    <td class="align-middle text-center">88.88</td>
+                    <td class="align-middle text-center">83.335</td>
+                    <td class="align-middle text-center">83.335</td>
+                    <td class="align-middle text-center">53.05</td>
+                    <td class="align-middle text-center"><b>78.64</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Feb 3, 2026</span>
+                    </td>
+                    <td class="align-middle text-center">doubao-1.5-pro<br>
+                      <span class="affiliation">ByteDance</span>
+                    </td>
+                    <td class="align-middle text-center">79.996</td>
+                    <td class="align-middle text-center">87.12</td>
+                    <td class="align-middle text-center">79.9</td>
+                    <td class="align-middle text-center">90.5</td>
+                    <td class="align-middle text-center">54.818</td>
+                    <td class="align-middle text-center"><b>78.47</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">QwQ-32B<br>
+                      <span class="affiliation">Alibaba</span>
+                    </td>
+                    <td class="align-middle text-center">83.22</td>
+                    <td class="align-middle text-center">81.98</td>
+                    <td class="align-middle text-center">83.275</td>
+                    <td class="align-middle text-center">83.275</td>
+                    <td class="align-middle text-center">58.595</td>
+                    <td class="align-middle text-center"><b>78.15</b></td>
                   </tr>
 
                   <tr>
@@ -105,44 +133,29 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Qwen3-32B<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">Alibaba</span>
                     </td>
-                    <td class="align-middle text-center">83.12</td>
-                    <td class="align-middle text-center">84.12</td>
-                    <td class="align-middle text-center">77.57</td>
-                    <td class="align-middle text-center">73.15</td>
-                    <td class="align-middle text-center">46.84</td>
-                    <td class="align-middle text-center"><b>72.96</b></td>
+                    <td class="align-middle text-center">81.084</td>
+                    <td class="align-middle text-center">83.06</td>
+                    <td class="align-middle text-center">82.78</td>
+                    <td class="align-middle text-center">84.415</td>
+                    <td class="align-middle text-center">57.003</td>
+                    <td class="align-middle text-center"><b>77.67</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                      <span class="badge badge-secondary">Feb 3, 2026</span>
                     </td>
-                    <td class="align-middle text-center">Qwen-14B<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">gpt-4o<br>
+                      <span class="affiliation">OpenAI</span>
                     </td>
-                    <td class="align-middle text-center">81.30</td>
-                    <td class="align-middle text-center">83.13</td>
-                    <td class="align-middle text-center">78.48</td>
-                    <td class="align-middle text-center">68.56</td>
-                    <td class="align-middle text-center">46.23</td>
-                    <td class="align-middle text-center"><b>71.54</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen-8B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">81.70</td>
-                    <td class="align-middle text-center">81.56</td>
-                    <td class="align-middle text-center">75.36</td>
-                    <td class="align-middle text-center">64.30</td>
-                    <td class="align-middle text-center">43.15</td>
-                    <td class="align-middle text-center"><b>69.21</b></td>
+                    <td class="align-middle text-center">81.09</td>
+                    <td class="align-middle text-center">80.21</td>
+                    <td class="align-middle text-center">81.145</td>
+                    <td class="align-middle text-center">89.288</td>
+                    <td class="align-middle text-center">56.22</td>
+                    <td class="align-middle text-center"><b>77.59</b></td>
                   </tr>
 
                   <tr>
@@ -150,402 +163,14 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Qwen2.5-72B-Instruct<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">Alibaba</span>
                     </td>
-                    <td class="align-middle text-center">81.90</td>
-                    <td class="align-middle text-center">74.85</td>
-                    <td class="align-middle text-center">72.65</td>
-                    <td class="align-middle text-center">71.03</td>
-                    <td class="align-middle text-center">45.29</td>
-                    <td class="align-middle text-center"><b>69.15</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-32B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">80.00</td>
-                    <td class="align-middle text-center">81.46</td>
-                    <td class="align-middle text-center">70.59</td>
-                    <td class="align-middle text-center">65.74</td>
-                    <td class="align-middle text-center">40.32</td>
-                    <td class="align-middle text-center"><b>67.62</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">DeepSeek-R1-0528-Qwen3-8B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">77.49</td>
-                    <td class="align-middle text-center">82.38</td>
-                    <td class="align-middle text-center">70.34</td>
-                    <td class="align-middle text-center">56.69</td>
-                    <td class="align-middle text-center">36.42</td>
-                    <td class="align-middle text-center"><b>64.66</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Llama-3.1-70B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">75.46</td>
-                    <td class="align-middle text-center">69.69</td>
-                    <td class="align-middle text-center">69.69</td>
-                    <td class="align-middle text-center">63.72</td>
-                    <td class="align-middle text-center">40.91</td>
-                    <td class="align-middle text-center"><b>63.81</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-14B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">79.57</td>
-                    <td class="align-middle text-center">75.05</td>
-                    <td class="align-middle text-center">66.88</td>
-                    <td class="align-middle text-center">57.83</td>
-                    <td class="align-middle text-center">30.92</td>
-                    <td class="align-middle text-center"><b>62.05</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">TableGPT2-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">75.07</td>
-                    <td class="align-middle text-center">64.07</td>
-                    <td class="align-middle text-center">64.35</td>
-                    <td class="align-middle text-center">59.90</td>
-                    <td class="align-middle text-center">37.14</td>
-                    <td class="align-middle text-center"><b>60.10</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Seed-Coder-8B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">65.49</td>
-                    <td class="align-middle text-center">60.10</td>
-                    <td class="align-middle text-center">57.24</td>
-                    <td class="align-middle text-center">66.94</td>
-                    <td class="align-middle text-center">39.15</td>
-                    <td class="align-middle text-center"><b>57.78</b></td>
-                  </tr>
-
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Table-R1-Zero-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">73.24</td>
-                    <td class="align-middle text-center">57.97</td>
-                    <td class="align-middle text-center">60.79</td>
-                    <td class="align-middle text-center">61.58</td>
-                    <td class="align-middle text-center">33.93</td>
-                    <td class="align-middle text-center"><b>57.50</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-Coder-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">69.09</td>
-                    <td class="align-middle text-center">65.88</td>
-                    <td class="align-middle text-center">57.99</td>
-                    <td class="align-middle text-center">59.64</td>
-                    <td class="align-middle text-center">32.66</td>
-                    <td class="align-middle text-center"><b>57.05</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">70.22</td>
-                    <td class="align-middle text-center">58.71</td>
-                    <td class="align-middle text-center">58.06</td>
-                    <td class="align-middle text-center">62.12</td>
-                    <td class="align-middle text-center">32.48</td>
-                    <td class="align-middle text-center"><b>56.32</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-Math-72B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">68.31</td>
-                    <td class="align-middle text-center">62.83</td>
-                    <td class="align-middle text-center">58.74</td>
-                    <td class="align-middle text-center">58.10</td>
-                    <td class="align-middle text-center">31.79</td>
-                    <td class="align-middle text-center"><b>55.95</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Llama-3.1-8B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">62.44</td>
-                    <td class="align-middle text-center">54.30</td>
-                    <td class="align-middle text-center">51.86</td>
-                    <td class="align-middle text-center">58.47</td>
-                    <td class="align-middle text-center">26.77</td>
-                    <td class="align-middle text-center"><b>50.77</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">57.03</td>
-                    <td class="align-middle text-center">59.14</td>
-                    <td class="align-middle text-center">50.17</td>
-                    <td class="align-middle text-center">54.63</td>
-                    <td class="align-middle text-center">22.45</td>
-                    <td class="align-middle text-center"><b>48.68</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Yi-Coder-9B-Chat<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">50.87</td>
-                    <td class="align-middle text-center">56.67</td>
-                    <td class="align-middle text-center">48.54</td>
-                    <td class="align-middle text-center">53.91</td>
-                    <td class="align-middle text-center">30.33</td>
-                    <td class="align-middle text-center"><b>48.07</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Table-R1-SFT-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">57.63</td>
-                    <td class="align-middle text-center">52.04</td>
-                    <td class="align-middle text-center">47.42</td>
-                    <td class="align-middle text-center">43.56</td>
-                    <td class="align-middle text-center">36.92</td>
-                    <td class="align-middle text-center"><b>47.51</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-coder-33B-instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">46.26</td>
-                    <td class="align-middle text-center">55.38</td>
-                    <td class="align-middle text-center">44.68</td>
-                    <td class="align-middle text-center">51.28</td>
-                    <td class="align-middle text-center">27.82</td>
-                    <td class="align-middle text-center"><b>45.08</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Llama-8B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">48.39</td>
-                    <td class="align-middle text-center">52.23</td>
-                    <td class="align-middle text-center">44.16</td>
-                    <td class="align-middle text-center">35.46</td>
-                    <td class="align-middle text-center">15.05</td>
-                    <td class="align-middle text-center"><b>41.06</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-Math-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">33.26</td>
-                    <td class="align-middle text-center">37.07</td>
-                    <td class="align-middle text-center">27.97</td>
-                    <td class="align-middle text-center">29.03</td>
-                    <td class="align-middle text-center">11.35</td>
-                    <td class="align-middle text-center"><b>27.74</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Kimina-Prover-Preview-Distill-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">19.20</td>
-                    <td class="align-middle text-center">15.57</td>
-                    <td class="align-middle text-center">14.37</td>
-                    <td class="align-middle text-center">13.49</td>
-                    <td class="align-middle text-center">6.08</td>
-                    <td class="align-middle text-center"><b>13.74</b></td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card card-outline-secondary">
-            <div class="card-header">
-              <div style="text-align: left;">Leaderboard (ROUGE-L)</div>
-              <div style="text-align: left; font-size: 0.55em; font-style: italic;">scores are averaged over TCoT, PoT and ICoT</div>
-            </div>
-            <div class="table-wrapper">
-              <table class="table" id="ex-table">
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col" rowspan="1"></th>
-                    <th scope="col" rowspan="1" class="align-middle text-center">
-                      Model
-                    </th>
-                    <!-- <th scope="col" rowspan="1" class="align-middle text-center">
-                    Code
-                  </th> -->
-                    <th scope="col" rowspan="1" class="align-middle text-center">
-                      TU<br>
-                    </th>
-                    <th scope="col" colspan="1" class="text-center">
-                      TBO<br>
-                    </th>
-                    <th scope="col" colspan="1" class="text-center">
-                      TCO<br>
-                    </th>
-                    <th scope="col" colspan="1" class="text-center">
-                      DA<br>
-                    </th>
-                    <th scope="col" colspan="1" class="align-middle text-center">
-                      ADA
-                    </th>
-                    <th scope="col" colspan="1" class="align-middle text-center">
-                      Avg.
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Oct 28, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">JT-DA-32B<br>
-                      <span class="affiliation">close source</span>
-                    </td>
-                    <td class="align-middle text-center">50.23</td>
-                    <td class="align-middle text-center">32.03</td>
-                    <td class="align-middle text-center">46.91</td>
-                    <td class="align-middle text-center">37.43</td>
-                    <td class="align-middle text-center">32.90</td>
-                    <td class="align-middle text-center"><b>39.90</b></td>
-                  </tr>
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen3-32B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">53.07</td>
-                    <td class="align-middle text-center">38.26</td>
-                    <td class="align-middle text-center">50.10</td>
-                    <td class="align-middle text-center">27.93</td>
-                    <td class="align-middle text-center">25.44</td>
-                    <td class="align-middle text-center"><b>38.96</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-72B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">53.84</td>
-                    <td class="align-middle text-center">33.00</td>
-                    <td class="align-middle text-center">47.60</td>
-                    <td class="align-middle text-center">27.97</td>
-                    <td class="align-middle text-center">23.48</td>
-                    <td class="align-middle text-center"><b>37.18</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen3-8B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">51.52</td>
-                    <td class="align-middle text-center">37.95</td>
-                    <td class="align-middle text-center">47.20</td>
-                    <td class="align-middle text-center">25.96</td>
-                    <td class="align-middle text-center">22.51</td>
-                    <td class="align-middle text-center"><b>37.03</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-32B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">52.84</td>
-                    <td class="align-middle text-center">35.52</td>
-                    <td class="align-middle text-center">46.40</td>
-                    <td class="align-middle text-center">27.51</td>
-                    <td class="align-middle text-center">21.81</td>
-                    <td class="align-middle text-center"><b>36.82</b></td>
+                    <td class="align-middle text-center">80.462</td>
+                    <td class="align-middle text-center">80.17</td>
+                    <td class="align-middle text-center">80.225</td>
+                    <td class="align-middle text-center">85.093</td>
+                    <td class="align-middle text-center">53.555</td>
+                    <td class="align-middle text-center"><b>75.9</b></td>
                   </tr>
 
                   <tr>
@@ -553,150 +178,44 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Qwen3-14B<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">Alibaba</span>
                     </td>
-                    <td class="align-middle text-center">51.15</td>
-                    <td class="align-middle text-center">39.00</td>
-                    <td class="align-middle text-center">48.04</td>
-                    <td class="align-middle text-center">23.47</td>
-                    <td class="align-middle text-center">22.33</td>
-                    <td class="align-middle text-center"><b>36.80</b></td>
+                    <td class="align-middle text-center">81.506</td>
+                    <td class="align-middle text-center">84.6</td>
+                    <td class="align-middle text-center">82.17</td>
+                    <td class="align-middle text-center">76.405</td>
+                    <td class="align-middle text-center">52.225</td>
+                    <td class="align-middle text-center"><b>75.38</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Feb 3, 2026</span>
+                    </td>
+                    <td class="align-middle text-center">gpt-4o-mini<br>
+                      <span class="affiliation">OpenAI</span>
+                    </td>
+                    <td class="align-middle text-center">75.496</td>
+                    <td class="align-middle text-center">76.88</td>
+                    <td class="align-middle text-center">78.91</td>
+                    <td class="align-middle text-center">84.85</td>
+                    <td class="align-middle text-center">49.062</td>
+                    <td class="align-middle text-center"><b>73.04</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-14B<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-32B<br>
+                      <span class="affiliation">Deepseek</span>
                     </td>
-                    <td class="align-middle text-center">50.04</td>
-                    <td class="align-middle text-center">28.66</td>
-                    <td class="align-middle text-center">42.51</td>
-                    <td class="align-middle text-center">26.04</td>
-                    <td class="align-middle text-center">17.00</td>
-                    <td class="align-middle text-center"><b>32.85</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">45.63</td>
-                    <td class="align-middle text-center">28.58</td>
-                    <td class="align-middle text-center">43.69</td>
-                    <td class="align-middle text-center">25.26</td>
-                    <td class="align-middle text-center">18.69</td>
-                    <td class="align-middle text-center"><b>32.37</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-Coder-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">44.15</td>
-                    <td class="align-middle text-center">29.54</td>
-                    <td class="align-middle text-center">42.93</td>
-                    <td class="align-middle text-center">24.02</td>
-                    <td class="align-middle text-center">17.81</td>
-                    <td class="align-middle text-center"><b>31.69</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Table-R1-Zero-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">44.84</td>
-                    <td class="align-middle text-center">27.42</td>
-                    <td class="align-middle text-center">41.42</td>
-                    <td class="align-middle text-center">25.35</td>
-                    <td class="align-middle text-center">17.76</td>
-                    <td class="align-middle text-center"><b>31.36</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">TableGPT2-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">43.25</td>
-                    <td class="align-middle text-center">31.83</td>
-                    <td class="align-middle text-center">42.08</td>
-                    <td class="align-middle text-center">16.82</td>
-                    <td class="align-middle text-center">15.56</td>
-                    <td class="align-middle text-center"><b>29.91</b></td>
-                  </tr>
-
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Seed-Coder-8B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">36.65</td>
-                    <td class="align-middle text-center">28.60</td>
-                    <td class="align-middle text-center">38.52</td>
-                    <td class="align-middle text-center">26.97</td>
-                    <td class="align-middle text-center">17.21</td>
-                    <td class="align-middle text-center"><b>29.59</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">DeepSeek-R1-0528-Qwen3-8B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">35.39</td>
-                    <td class="align-middle text-center">26.80</td>
-                    <td class="align-middle text-center">33.79</td>
-                    <td class="align-middle text-center">16.58</td>
-                    <td class="align-middle text-center">14.48</td>
-                    <td class="align-middle text-center"><b>25.41</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">32.20</td>
-                    <td class="align-middle text-center">25.14</td>
-                    <td class="align-middle text-center">31.41</td>
-                    <td class="align-middle text-center">23.78</td>
-                    <td class="align-middle text-center">11.22</td>
-                    <td class="align-middle text-center"><b>24.75</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Qwen2.5-Math-72B-Instruct<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">31.11</td>
-                    <td class="align-middle text-center">24.92</td>
-                    <td class="align-middle text-center">30.53</td>
-                    <td class="align-middle text-center">18.89</td>
-                    <td class="align-middle text-center">16.53</td>
-                    <td class="align-middle text-center"><b>24.40</b></td>
+                    <td class="align-middle text-center">76.914</td>
+                    <td class="align-middle text-center">77.85</td>
+                    <td class="align-middle text-center">77.41</td>
+                    <td class="align-middle text-center">81.545</td>
+                    <td class="align-middle text-center">49.948</td>
+                    <td class="align-middle text-center"><b>72.73</b></td>
                   </tr>
 
                   <tr>
@@ -704,44 +223,150 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Llama-3.1-70B-Instruct<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">Meta</span>
                     </td>
-                    <td class="align-middle text-center">30.98</td>
-                    <td class="align-middle text-center">20.59</td>
-                    <td class="align-middle text-center">29.91</td>
-                    <td class="align-middle text-center">10.49</td>
-                    <td class="align-middle text-center">11.39</td>
-                    <td class="align-middle text-center"><b>20.67</b></td>
+                    <td class="align-middle text-center">68.012</td>
+                    <td class="align-middle text-center">78.9</td>
+                    <td class="align-middle text-center">77.595</td>
+                    <td class="align-middle text-center">81.06</td>
+                    <td class="align-middle text-center">56.223</td>
+                    <td class="align-middle text-center"><b>72.36</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
-                    <td class="align-middle text-center">Deepseek-R1-Distill-Llama-8B<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">Qwen3-8B<br>
+                      <span class="affiliation">Alibaba</span>
                     </td>
-                    <td class="align-middle text-center">30.71</td>
-                    <td class="align-middle text-center">21.49</td>
-                    <td class="align-middle text-center">24.94</td>
-                    <td class="align-middle text-center">13.66</td>
-                    <td class="align-middle text-center">7.65</td>
-                    <td class="align-middle text-center"><b>19.69</b></td>
+                    <td class="align-middle text-center">79.052</td>
+                    <td class="align-middle text-center">80.03</td>
+                    <td class="align-middle text-center">78.465</td>
+                    <td class="align-middle text-center">71.32</td>
+                    <td class="align-middle text-center">49.098</td>
+                    <td class="align-middle text-center"><b>71.59</b></td>
+                  </tr>
+
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">TableGPT2-7B<br>
+                      <span class="affiliation">Zhejiang University</span>
+                    </td>
+                    <td class="align-middle text-center">71.632</td>
+                    <td class="align-middle text-center">71.00</td>
+                    <td class="align-middle text-center">74.685</td>
+                    <td class="align-middle text-center">85.12</td>
+                    <td class="align-middle text-center">48.212</td>
+                    <td class="align-middle text-center"><b>70.13</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
-                    <td class="align-middle text-center">Table-R1-SFT-7B<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-14B<br>
+                      <span class="affiliation">Deepseek</span>
                     </td>
-                    <td class="align-middle text-center">25.17</td>
-                    <td class="align-middle text-center">16.95</td>
-                    <td class="align-middle text-center">23.34</td>
-                    <td class="align-middle text-center">14.24</td>
-                    <td class="align-middle text-center">6.20</td>
-                    <td class="align-middle text-center"><b>17.18</b></td>
+                    <td class="align-middle text-center">75.028</td>
+                    <td class="align-middle text-center">74.12</td>
+                    <td class="align-middle text-center">72.76</td>
+                    <td class="align-middle text-center">73.73</td>
+                    <td class="align-middle text-center">39.18</td>
+                    <td class="align-middle text-center"><b>66.96</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Table-R1-Zero-7B<br>
+                      <span class="affiliation">Yale</span>
+                    </td>
+                    <td class="align-middle text-center">73.53</td>
+                    <td class="align-middle text-center">60.655</td>
+                    <td class="align-middle text-center">73.655</td>
+                    <td class="align-middle text-center">80.07</td>
+                    <td class="align-middle text-center">45.853</td>
+                    <td class="align-middle text-center"><b>66.75</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Dec 2, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">DeepSeek-R1-0528-Qwen3-8B<br>
+                      <span class="affiliation">DeepSeek</span>
+                    </td>
+                    <td class="align-middle text-center">77.292</td>
+                    <td class="align-middle text-center">78.21</td>
+                    <td class="align-middle text-center">69.035</td>
+                    <td class="align-middle text-center">64.273</td>
+                    <td class="align-middle text-center">40.387</td>
+                    <td class="align-middle text-center"><b>65.84</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Qwen2.5-Coder-7B-Instruct<br>
+                      <span class="affiliation">Alibaba</span>
+                    </td>
+                    <td class="align-middle text-center">67.612</td>
+                    <td class="align-middle text-center">73.99</td>
+                    <td class="align-middle text-center">68.02</td>
+                    <td class="align-middle text-center">80.025</td>
+                    <td class="align-middle text-center">38.832</td>
+                    <td class="align-middle text-center"><b>65.7</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Qwen2.5-7B-Instruct<br>
+                      <span class="affiliation">Alibaba</span>
+                    </td>
+                    <td class="align-middle text-center">69.052</td>
+                    <td class="align-middle text-center">68.23</td>
+                    <td class="align-middle text-center">67.3</td>
+                    <td class="align-middle text-center">79.755</td>
+                    <td class="align-middle text-center">41.915</td>
+                    <td class="align-middle text-center"><b>65.25</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Seed-Coder-8B-Instruct<br>
+                      <span class="affiliation">ByteDance</span>
+                    </td>
+                    <td class="align-middle text-center">64.698</td>
+                    <td class="align-middle text-center">71.16</td>
+                    <td class="align-middle text-center">66.17</td>
+                    <td class="align-middle text-center">82.085</td>
+                    <td class="align-middle text-center">41.582</td>
+                    <td class="align-middle text-center"><b>65.14</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Qwen2.5-Math-72B-Instruct<br>
+                      <span class="affiliation">Alibaba</span>
+                    </td>
+                    <td class="align-middle text-center">74.416</td>
+                    <td class="align-middle text-center">66.24</td>
+                    <td class="align-middle text-center">69.24</td>
+                    <td class="align-middle text-center">75.573</td>
+                    <td class="align-middle text-center">38.897</td>
+                    <td class="align-middle text-center"><b>64.87</b></td>
                   </tr>
 
                   <tr>
@@ -749,29 +374,44 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Llama-3.1-8B-Instruct<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">Meta</span>
                     </td>
-                    <td class="align-middle text-center">20.00</td>
-                    <td class="align-middle text-center">19.88</td>
-                    <td class="align-middle text-center">22.96</td>
-                    <td class="align-middle text-center">12.44</td>
-                    <td class="align-middle text-center">9.96</td>
-                    <td class="align-middle text-center"><b>17.05</b></td>
+                    <td class="align-middle text-center">59.4</td>
+                    <td class="align-middle text-center">70.13</td>
+                    <td class="align-middle text-center">63.81</td>
+                    <td class="align-middle text-center">76.445</td>
+                    <td class="align-middle text-center">35.35</td>
+                    <td class="align-middle text-center"><b>61.03</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
-                    <td class="align-middle text-center">DeepSeek-coder-33B-instruct<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">Deepseek-R1-Distill-Qwen-7B<br>
+                      <span class="affiliation">Deepseek</span>
                     </td>
-                    <td class="align-middle text-center">22.09</td>
-                    <td class="align-middle text-center">20.42</td>
-                    <td class="align-middle text-center">17.75</td>
-                    <td class="align-middle text-center">14.10</td>
-                    <td class="align-middle text-center">8.33</td>
-                    <td class="align-middle text-center"><b>16.54</b></td>
+                    <td class="align-middle text-center">60.72</td>
+                    <td class="align-middle text-center">58.58</td>
+                    <td class="align-middle text-center">53.855</td>
+                    <td class="align-middle text-center">71.463</td>
+                    <td class="align-middle text-center">29.313</td>
+                    <td class="align-middle text-center"><b>54.79</b></td>
+                  </tr>
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Sep 1, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Deepseek-R1-Distill-Llama-8B<br>
+                      <span class="affiliation">Deepseek</span>
+                    </td>
+                    <td class="align-middle text-center">62.689</td>
+                    <td class="align-middle text-center">56.52</td>
+                    <td class="align-middle text-center">47.8</td>
+                    <td class="align-middle text-center">50.773</td>
+                    <td class="align-middle text-center">19.97</td>
+                    <td class="align-middle text-center"><b>47.55</b></td>
                   </tr>
 
                   <tr>
@@ -779,44 +419,29 @@
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
                     <td class="align-middle text-center">Yi-Coder-9B-Chat<br>
-                      <span class="affiliation">open source</span>
+                      <span class="affiliation">01-AI</span>
                     </td>
-                    <td class="align-middle text-center">22.89</td>
-                    <td class="align-middle text-center">17.90</td>
-                    <td class="align-middle text-center">19.02</td>
-                    <td class="align-middle text-center">9.56</td>
-                    <td class="align-middle text-center">8.92</td>
-                    <td class="align-middle text-center"><b>15.66</b></td>
+                    <td class="align-middle text-center">43.97</td>
+                    <td class="align-middle text-center">57.05</td>
+                    <td class="align-middle text-center">47.01</td>
+                    <td class="align-middle text-center">56.095</td>
+                    <td class="align-middle text-center">33.172</td>
+                    <td class="align-middle text-center"><b>47.46</b></td>
                   </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 1, 2025</span>
                     </td>
-                    <td class="align-middle text-center">Qwen2.5-Math-7B-Instruct<br>
-                      <span class="affiliation">open source</span>
+                    <td class="align-middle text-center">Table-R1-SFT-7B<br>
+                      <span class="affiliation">Yale</span>
                     </td>
-                    <td class="align-middle text-center">9.26</td>
-                    <td class="align-middle text-center">13.53</td>
-                    <td class="align-middle text-center">13.26</td>
-                    <td class="align-middle text-center">6.00</td>
-                    <td class="align-middle text-center">6.22</td>
-                    <td class="align-middle text-center"><b>9.65</b></td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row" class="align-middle text-center counter-cell">
-                      <span class="badge badge-secondary">Sep 1, 2025</span>
-                    </td>
-                    <td class="align-middle text-center">Kimina-Prover-Preview-Distill-7B<br>
-                      <span class="affiliation">open source</span>
-                    </td>
-                    <td class="align-middle text-center">2.49</td>
-                    <td class="align-middle text-center">4.30</td>
-                    <td class="align-middle text-center">3.39</td>
-                    <td class="align-middle text-center">2.19</td>
-                    <td class="align-middle text-center">1.75</td>
-                    <td class="align-middle text-center"><b>2.82</b></td>
+                    <td class="align-middle text-center">60.404</td>
+                    <td class="align-middle text-center">23.46</td>
+                    <td class="align-middle text-center">24.1</td>
+                    <td class="align-middle text-center">43.01</td>
+                    <td class="align-middle text-center">37.603</td>
+                    <td class="align-middle text-center"><b>37.72</b></td>
                   </tr>
 
                 </tbody>
@@ -878,8 +503,15 @@
                             color: white;
                             padding: 2px 4px;
                             border-radius: 5px;
+                          "><strong style="color: #ffe7ce">Feb. 3, 2026:</strong></span>
+                        <p>We have updated the evaluation results of some models on the leaderboard and removed the display of the Rouge-L metric, retaining only the LLM-as-a-judge metric (which is relatively fairer).</p>
+                        <span style="
+                            background-color: #B03052;
+                            color: white;
+                            padding: 2px 4px;
+                            border-radius: 5px;
                           "><strong style="color: #ffe7ce">Jun. 18, 2025:</strong></span>
-                        <p>🔥🔥 The benchmark paper, code and dataset are all released! Please check and submit your result to leaderboard!!</p>.
+                        <p>🔥🔥 The benchmark paper, code and dataset are all released! Please check and submit your result to leaderboard!!</p>
                         <p>Thank you for all the feedback!!!</p>
                       </li>
                       <hr>
@@ -934,9 +566,6 @@ url={https://arxiv.org/abs/2506.18421},
 }
 </pre>
               <!-- </blockquote> -->
-            </div>
-            <div class="list-group-item">
-              ⚙ This website is an improved version based on the original source code from <a href="https://bird-bench.github.io/" target="_blank">Bird-Bench</a>!
             </div>
           </div>
         </div>
