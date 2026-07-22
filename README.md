@@ -198,14 +198,13 @@ Some details to note:
 ## Citation
 If you find our work helpful, please use the following citations.
 ```bibtext
-@misc{li2025trebcomprehensivebenchmarkevaluating,
-      title={TReB: A Comprehensive Benchmark for Evaluating Table Reasoning Capabilities of Large Language Models}, 
-      author={Ce Li and Xiaofan Liu and Zhiyan Song and Ce Chi and Chen Zhao and Jingjing Yang and Zhendong Wang and Kexin Yang and Boshen Shi and Xing Wang and Chao Deng and Junlan Feng},
-      year={2025},
-      eprint={2506.18421},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.18421}, 
+@inproceedings{10.1145/3805712.3808617,
+author = {Li, Ce and Liu, Xiaofan and Song, Zhiyan and Chi, Ce and Shi, Boshen and Zhao, Chen and Chang, Guanguang and Wang, Zhendong and Yang, Kexin and Wang, Xing and Deng, Chao and Feng, Junlan},
+title = {TReB: A Comprehensive Benchmark for Evaluating Table Reasoning Capabilities of Large Language Models},
+year = {2026},
+doi = {10.1145/3805712.3808617},
+booktitle = {Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {3267–3275}
 }
 ```
 
